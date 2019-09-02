@@ -554,7 +554,6 @@ extern struct cpufreq_governor cpufreq_gov_darkutil;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_darkutil)
 #endif
 
-
 static inline void cpufreq_policy_apply_limits(struct cpufreq_policy *policy)
 {
 	if (policy->max < policy->cur)
