@@ -847,9 +847,8 @@ static void write_default_values(struct cgroup_subsys_state *css)
 		if (!memcmp(cg_name, stune_groups[i], sizeof(*stune_groups[i]))) {
 			boost_write(css, NULL, boost_values[i]);
 			prefer_idle_write(css, NULL, prefer_idle_values[i]);
-			sched_boost_write(css, NULL, sched_boost_values[i]);
 			pr_info("%s: setting %s to %i and %i\n",
-			__func__, stune_groups[i], boost_values[i], prefer_idle_values[i], sched_boost_values[i]);
+			__func__, stune_groups[i], boost_values[i], prefer_idle_values[i]);
 		}
 	}
 }
