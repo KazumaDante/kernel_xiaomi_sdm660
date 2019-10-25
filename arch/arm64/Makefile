@@ -61,7 +61,6 @@ ifeq ($(CONFIG_COMPAT_VDSO), y)
     vdso32 := -DCONFIG_VDSO32=1
   endif
 endif
->>>>>>> 7a34c1f... FROMLIST: BACKPORT: [PATCH 6/6] arm64: Wire up and expose the new compat vDSO
 
 ifeq ($(cc-name),clang)
 # This is a workaround for https://bugs.llvm.org/show_bug.cgi?id=30792.
